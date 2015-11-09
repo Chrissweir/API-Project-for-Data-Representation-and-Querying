@@ -73,7 +73,7 @@ For example, the URL:
 will return the number of access points at this particular venue.
 ```
 
-##**If the dataset was modified to include other towns and cities then these urls could be used!**##
+###**If the dataset was modified to include other towns and cities then these urls could be used!**###
 
 #####Location of access points in a given city#####
 This will give you the location of access points in a given city, including the name of the venue and its full address.
