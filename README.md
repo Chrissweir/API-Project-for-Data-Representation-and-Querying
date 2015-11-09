@@ -32,7 +32,7 @@ The app should be simple and very user friendly, I think two windows will be suf
 
 ###Main Menu###
 
-The app should open onto the main menu page with two options
+The app should open onto the main menu page with two options. Here is a link to a template I have designed: https://github.com/Chrissweir/ApiProject/blob/master/Main%20Menu.png
 
 > ####Venue####
 
