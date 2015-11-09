@@ -16,9 +16,8 @@ I would imagine that the type of people to use this app would be those who are e
 
 This dataset was received in Comma Separated Values (CSV) format, and was downloaded from https://data.gov.ie/dataset/dublin-wheel-chair-access-guide.
 The CSV file contains 814 rows, the first being a header row with the names of each field.
-There are seven values on each line, which are as follows:
+There are six values on each line, which are as follows:
 
-> * **id**: The id of the row // primary key?
 > * **Venue**: The name of the venue // primary key?
 > * **Address1**: The first part of the venue address
 > * **Address2**: The second part of the venue address
@@ -36,11 +35,22 @@ The app should open onto the main menu page with two options. Here is a link to 
 
 > ####Venue####
 
-This section would contain a drop down list of all the venues in the dataset sorted into alphabetical order. The user could select any of these venues to find out the wheelchair access information for that particular venue. Here is a link to a template I have designed: https://github.com/Chrissweir/ApiProject/blob/master/Venue%20Menu.png
+This section would contain a drop down list of all the venues in the dataset sorted into alphabetical order. The user could select any of these venues to find out the wheelchair access information for that particular venue. In the template that I designed I aim to show the simple layout with just the one dropdown menu available. Here is a link to the template I have designed: https://github.com/Chrissweir/ApiProject/blob/master/Venue%20Menu.png
 
 > ####Map####
 
 This section would be a map that using gps, could find the users current location and inform them of wheelchair accessible ares in the current vicinity and show those locations on the map along with directions. Here is a link to a template I have designed: https://github.com/Chrissweir/ApiProject/blob/master/Map%20Menu.png
 
+##URL's##
+
+#####List of access points on a given street#####
+You can get a list of access points on a given street at the following URL:
+```markdown
+*http://dublinwheelchairaccessguide.com/street/[street]*
+where you replace [street] with the street name.
+For example, the URL:
+*http://dublinwheelchairaccessguide.com/street/EssexStreetWest*
+will return a list of access points on this particular street.
+```
 
 
