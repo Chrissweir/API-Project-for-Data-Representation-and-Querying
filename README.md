@@ -26,3 +26,16 @@ There are seven values on each line, which are as follows:
 > * **Phone**: The phone number of the venue
 > * **Web**: The website of the venue
 
+##Design##
+
+The app should be simple and very user friendly, I think two windows will be sufficient to fullfill the requirements of the app.
+
+###Main Menu###
+
+The app should open onto the main menu page with two options
+
+> ####Venue####
+
+This section would contain a drop down list of all the venues in the dataset sorted into alphabetical order. The user could select any of these venues to find out the wheelchair access information for that particular venue.
+
+
