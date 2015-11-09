@@ -42,3 +42,5 @@ This section would contain a drop down list of all the venues in the dataset sor
 
 This section would be a map that using gps, could find the users current location and inform them of wheelchair accessible ares in the current vicinity and show those locations on the map along with directions.
 
+
+
