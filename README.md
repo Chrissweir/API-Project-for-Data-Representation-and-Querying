@@ -16,6 +16,13 @@ I would imagine that the type of people to use this app would be those who are e
 
 This dataset was received in Comma Separated Values (CSV) format, and was downloaded from https://data.gov.ie/dataset/dublin-wheel-chair-access-guide.
 The CSV file contains 814 rows, the first being a header row with the names of each field.
-There are six values on each line, which are as follows:
+There are seven values on each line, which are as follows:
 
+  -**id**: The id of the row // primary key?
+  -**Venue**: The name of the venue // primary key?
+  -**Address1**: The first part of the venue address
+  -**Address2**: The second part of the venue address
+  -**Address3**: The third part of the venue address
+  -**Phone**: The phone number of the venue
+  -**Web**: The website of the venue
 
