@@ -8,3 +8,4 @@
 This project provides the design and documentation for the dataset "Dublin Wheel Chair Access Guide
 " which is available at https://data.gov.ie/dataset/dublin-wheel-chair-access-guide
 
+The data is only based on information from Dublin City Council. I would suggest to data.gov.ie to upload other datasets of all major cities and towns throughout Ireland and to particularly include other datasets of all countrywide public building wheelchair access points.
