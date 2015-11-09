@@ -44,13 +44,53 @@ This section would be a map that using gps, could find the users current locatio
 ##URL's##
 
 #####List of access points on a given street#####
-You can get a list of access points on a given street at the following URL:
+This will give you a list of access points on a particular street, including the name of the venue and its full address.
 ```markdown
-*http://dublinwheelchairaccessguide.com/street/[street]*
+*http://dublinwheelchairaccessguide.ie/street/[street]*
 where you replace [street] with the street name.
 For example, the URL:
-*http://dublinwheelchairaccessguide.com/street/EssexStreetWest*
+*http://dublinwheelchairaccessguide.ie/street/EssexStreetWest*
 will return a list of access points on this particular street.
 ```
 
+#####List of access points at a given venue#####
+This will give you a list of access points at a given Venue, including the location of these access points and the name of the venue and its full address.
+```markdown
+*http://dublinwheelchairaccessguide.ie/venue/[venue]*
+where you replace [venue] with the venue name.
+For example, the URL:
+*http://dublinwheelchairaccessguide.ie/venue/ArlingtonHotel*
+will return a list of access points at this particular venue.
+```
 
+#####Number of access points at a given venue#####
+This will give you the number of access points at a particular venue, including the name of the venue and its full address.
+```markdown
+*http://dublinwheelchairaccessguide.ie/venue/[venue]number*
+where you replace [venue] with the venue name.
+For example, the URL:
+*http://dublinwheelchairaccessguide.ie/venue/ArlingtonHotel-Number*
+will return the number of access points at this particular venue.
+```
+
+**If the dataset was modified to include other towns and cities then these urls could be used!**
+
+#####Location of access points in a given city#####
+This will give you the location of access points in a given city, including the name of the venue and its full address.
+```markdown
+*http://dublinwheelchairaccessguide.ie/[city]*
+where you replace [city] with the city name.
+For example, the URL:
+*http://dublinwheelchairaccessguide.ie/Galway*
+will return the location of access points in this particular city.
+```
+
+#####Location of access points in a given town#####
+This will give you the location of access points in a given town, including the name of the venue and its full address.
+```markdown
+*http://dublinwheelchairaccessguide.ie/[town]*
+where you replace [town] with the town name.
+For example, the URL:
+*http://dublinwheelchairaccessguide.ie/Ballina*
+will return the location of access points in this particular town.
+```
