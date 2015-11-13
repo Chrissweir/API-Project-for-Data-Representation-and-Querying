@@ -56,16 +56,19 @@ will return a list of access points on this particular street.
 ```
 **JSON Example**
 ```json
-{
+[
+  {
         "Venue": "Clarion Hotel IFSC",
         "Address 1": "IFSC",
         "Address 2": "Clarion Quay",
         "Address 3": "Dublin 1",
         "Phone": "01 4338800",
         "Web": "www.clarionhotelifsc.com"
+  },
   { ... },
   { ... }
-}```
+]
+```
 
 #####List of access points at a given venue
 This will give you a list of access points at a given Venue, including the location of these access points and the name of the venue and its full address.
