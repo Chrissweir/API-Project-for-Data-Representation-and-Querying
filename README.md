@@ -43,7 +43,7 @@ This section would contain a drop down list of all the venues in the dataset sor
 
 This section would be a map that using gps, could find the users current location and inform them of wheelchair accessible ares in the current vicinity and show those locations on the map along with directions. Here is a link to a template I have designed: https://github.com/Chrissweir/ApiProject/blob/master/Map%20Menu.png
 
-##URL's
+##HTTP Requests and GET METHOD
 
 #####List of access points on a given street
 This will give you a list of access points on a particular street, including the name of the venue and its full address.
@@ -51,9 +51,21 @@ This will give you a list of access points on a particular street, including the
 *http://dublinwheelchairaccessguide.ie/street/[street]*
 where you replace [street] with the street name.
 For example, the URL:
-*http://dublinwheelchairaccessguide.ie/street/EssexStreetWest*
+*http://dublinwheelchairaccessguide.ie/street/Clarian Quay*
 will return a list of access points on this particular street.
 ```
+**JSON Example**
+```json
+{
+        "Venue": "Clarion Hotel IFSC",
+        "Address 1": "IFSC",
+        "Address 2": "Clarion Quay",
+        "Address 3": "Dublin 1",
+        "Phone": "01 4338800",
+        "Web": "www.clarionhotelifsc.com"
+  { ... },
+  { ... }
+}```
 
 #####List of access points at a given venue
 This will give you a list of access points at a given Venue, including the location of these access points and the name of the venue and its full address.
@@ -96,3 +108,4 @@ For example, the URL:
 *http://dublinwheelchairaccessguide.ie/Ballina*
 will return the location of access points in this particular town.
 ```
+
