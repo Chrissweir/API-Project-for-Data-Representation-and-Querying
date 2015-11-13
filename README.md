@@ -43,7 +43,8 @@ This section would contain a drop down list of all the venues in the dataset sor
 
 This section would be a map that using gps, could find the users current location and inform them of wheelchair accessible ares in the current vicinity and show those locations on the map along with directions. Here is a link to a template I have designed: https://github.com/Chrissweir/ApiProject/blob/master/Map%20Menu.png
 
-##HTTP Requests and GET METHOD
+##HTTP Requests and JSON Response
+####**If the dataset was modified to include other towns and cities, the exact locations of the access points at each venue and also the number of access point at each veenue, then these urls could be used!**
 
 #####List of access points on a given street
 This will give you a list of access points on a particular street, including the name of the venue and its full address.
@@ -54,7 +55,8 @@ For example, the URL:
 *http://dublinwheelchairaccessguide.ie/street/Clarian Quay*
 will return a list of access points on this particular street.
 ```
-**JSON Example**
+**JSON Response Example**
+(will return an array of all Venues)
 ```json
 [
   {
@@ -71,7 +73,7 @@ will return a list of access points on this particular street.
 ```
 
 #####List of access points at a given venue
-This will give you a list of access points at a given Venue, including the location of these access points and the name of the venue and its full address.
+This will give you a list of access points at a given Venue, including the location of these access points and the name of the venue.
 ```markdown
 *http://dublinwheelchairaccessguide.ie/venue/[venue]*
 where you replace [venue] with the venue name.
@@ -79,9 +81,23 @@ For example, the URL:
 *http://dublinwheelchairaccessguide.ie/venue/ArlingtonHotel*
 will return a list of access points at this particular venue.
 ```
+**JSON Response Example**
+(will return an array of all Locations)
+```json
+[
+  {
+        "Venue": "Arlington Hotel",
+        "Location": "53.347202, -6.260892",
+        "Phone": "01 8049100",
+        "Web": "http://www.arlington.ie"
+  },
+  { ... },
+  { ... }
+]
+```
 
 #####Number of access points at a given venue
-This will give you the number of access points at a particular venue, including the name of the venue and its full address.
+This will give you the number of access points at a particular venue, including the name of the venue.
 ```markdown
 *http://dublinwheelchairaccessguide.ie/venue/[venue]number*
 where you replace [venue] with the venue name.
@@ -89,8 +105,20 @@ For example, the URL:
 *http://dublinwheelchairaccessguide.ie/venue/ArlingtonHotel-Number*
 will return the number of access points at this particular venue.
 ```
-
-###**If the dataset was modified to include other towns and cities then these urls could be used!**###
+**JSON Response Example**
+(will return an array of the number of access points)
+```json
+[
+  {
+        "Venue": "Arlington Hotel",
+        "Number": "4",
+        "Phone": "01 8049100",
+        "Web": "http://www.arlington.ie"
+  },
+  { ... },
+  { ... }
+]
+```
 
 #####Location of access points in a given city
 This will give you the location of access points in a given city, including the name of the venue and its full address.
@@ -100,6 +128,22 @@ where you replace [city] with the city name.
 For example, the URL:
 *http://dublinwheelchairaccessguide.ie/Galway*
 will return the location of access points in this particular city.
+```
+**JSON Response Example**
+(will return an array of all Venues in this city)
+```json
+[
+  {
+        "Venue": "Flannerys Hotel",
+        "Address 1": "Old Dublin Road",
+        "Address 2": "Galway City East",
+        "Address 3": "Galway",
+        "Phone": "091 755 111",
+        "Web": "www.flanneryshotelgalway.com"
+  },
+  { ... },
+  { ... }
+]
 ```
 
 #####Location of access points in a given town
@@ -111,4 +155,23 @@ For example, the URL:
 *http://dublinwheelchairaccessguide.ie/Ballina*
 will return the location of access points in this particular town.
 ```
+**JSON Response Example**
+(will return an array of all Venues in this town)
+```json
+[
+  {
+        "Venue": "Hotel Ballina",
+        "Address 1": "N26",
+        "Address 2": "Dublin Road",
+        "Address 3": "Ballina",
+        "Phone": "096 23623",
+        "Web": "www.hotelballina.ie"
+  },
+  { ... },
+  { ... }
+]
+```
+
+###Conclusion
+If the dataset was modified to include other towns and cities, the exact locations of the access points at each venue and also the number of access point at each venue, then the user would be able to access more needed information. Above covers the main aspect of the dataset and what needs to be provided to the user.
 
