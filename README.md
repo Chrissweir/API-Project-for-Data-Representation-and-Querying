@@ -46,7 +46,7 @@ This section would be a map that using gps, could find the users current locatio
 ##HTTP Requests and JSON Response
 ####**If the dataset was modified to include other towns and cities, the exact locations of the access points at each venue and also the number of access point at each veenue, then these urls could be used!**
 
-#####List of access points on a given street
+####List of access points on a given street
 This will give you a list of access points on a particular street, including the name of the venue and its full address.
 ```markdown
 *http://dublinwheelchairaccessguide.ie/street/[street]*
@@ -72,7 +72,7 @@ will return a list of access points on this particular street.
 ]
 ```
 
-#####List of access points at a given venue
+####List of access points at a given venue
 This will give you a list of access points at a given Venue, including the location of these access points and the name of the venue.
 ```markdown
 *http://dublinwheelchairaccessguide.ie/venue/[venue]*
@@ -96,7 +96,7 @@ will return a list of access points at this particular venue.
 ]
 ```
 
-#####Number of access points at a given venue
+####Number of access points at a given venue
 This will give you the number of access points at a particular venue, including the name of the venue.
 ```markdown
 *http://dublinwheelchairaccessguide.ie/venue/[venue]number*
@@ -120,7 +120,7 @@ will return the number of access points at this particular venue.
 ]
 ```
 
-#####Location of access points in a given city
+####Location of access points in a given city
 This will give you the location of access points in a given city, including the name of the venue and its full address.
 ```markdown
 *http://dublinwheelchairaccessguide.ie/[city]*
@@ -146,7 +146,7 @@ will return the location of access points in this particular city.
 ]
 ```
 
-#####Location of access points in a given town
+####Location of access points in a given town
 This will give you the location of access points in a given town, including the name of the venue and its full address.
 ```markdown
 *http://dublinwheelchairaccessguide.ie/[town]*
